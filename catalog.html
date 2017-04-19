@@ -41,38 +41,132 @@
             </section>
             <h1>Сливочное мороженое</h1>
             <div class="filter">
-                <div class="top-filter">
-                    <div class="top-filter-sorting">
-                        <form action="#" method="post">
-                            <h2>Сортировка:</h2>
-                            <select name="sorting">
-                                
-                            </select>
-                        </form>
-                    </div>
+                <form action="#" method="post">
+                    <h2>Сортировка:</h2>
+                    <select name="sorting">
+                        <option value="по популярности">
+                        <!-- Надо еще добавлять значения? -->
+                    </select>
+                    <h2>Цена: 100 руб. - 500 руб.</h2>
+                    <input type="range" min="0" max="800" name="price">
+                    <h2>Жирность:</h2>
+                    <input type="radio" name="fat-content" value="0" id="radio-1">
+                    <label for="radio-1">0%</label>
+                    <input type="radio" name="fat-content" value="less-10" id="radio-2">
+                    <label for="radio-2">до 10%</label>
+                    <input type="radio" name="fat-content" value="less-30" id="radio-3">
+                    <label for="radio-3">до 30%</label>
+                    <input type="radio" name="fat-content" value="more-30" id="radio-4">
+                    <label for="radio-4">выше 30%</label>
+                    <h2>Наполнители:</h2>
+                    <input type="checkbox" name="chocolate" checked>
+                    <label for="chocolate">шоколадные</label>
+                    <input type="checkbox" name="sugar" checked>
+                    <label for="sugar">сахарные присыпки</label>
+                    <input type="checkbox" name="fruit">
+                    <label for="fruit">фрукты</label>
+                    <input type="checkbox" name="syrup">
+                    <label for="syrup">сиропы</label>
+                    <input type="checkbox" name="jam">
+                    <label for="jam">джемы</label>
+                    <input type="submit" value="Применить">
+                </form>
+            </div>
+            <div class="catalog">
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой" width="0" height="0">
+                    </figure>
+                    <p>310&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
-                <div class="bottom-filter">
-                    <div class="bottom-filter-filler">
-                        <form action="#" method="post">
-                            <h2>Наполнители:</h2>
-                            <input type="checkbox" name="chocolate" checked>
-                            <label for="chocolate">шоколадные</label>
-                            <input type="checkbox" name="sugar" checked>
-                            <label for="sugar">сахарные присыпки</label>
-                            <input type="checkbox" name="fruit">
-                            <label for="fruit">фрукты</label>
-                            <input type="checkbox" name="syrup">
-                            <label for="syrup">сиропы</label>
-                            <input type="checkbox" name="jam">
-                            <label for="jam">джемы</label>
-                        </form>
-                    </div>
-                    <div class="bottom-filter-button">
-                        <form action="#" method="post">
-                            <input type="submit" value="Применить">
-                        </form>
-                    </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочно-кофейное мороженое с кусочками шоколада" width="0" height="0">
+                    </figure>
+                    <p>380&#8381;&#8260;кг</p>
+                    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада" width="0" height="0">
+                    </figure>
+                    <p>355&#8381;&#8260;кг</p>
+                    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное крем-брюле мороженое с карамельной подливкой" width="0" height="0">
+                    </figure>
+                    <p>415&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с брусничным джемом" width="0" height="0">
+                    </figure>
+                    <p>325&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с брусничным джемом</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочно-черничное мороженое с цельными ягодами черники" width="0" height="0">
+                    </figure>
+                    <p>410&#8381;&#8260;кг</p>
+                    <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочно-лимонное мороженое с карамельной присыпкой" width="0" height="0">
+                    </figure>
+                    <p>375&#8381;&#8260;кг</p>
+                    <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с шоколадной стружкой" width="0" height="0">
+                    </figure>
+                    <p>320&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с шоколадной стружкой</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочно-ванильное мороженое с кусочками шоколада" width="0" height="0">
+                    </figure>
+                    <p>440&#8381;&#8260;кг</p>
+                    <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с ментоловым сиропом" width="0" height="0">
+                    </figure>
+                    <p>435&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с ментоловым сиропом</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с кусочками черного шоколада" width="0" height="0">
+                    </figure>
+                    <p>355&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с кусочками черного шоколада</a>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="#" alt="Сливочное мороженое с мятным сиропом" width="0" height="0">
+                    </figure>
+                    <p>420&#8381;&#8260;кг</p>
+                    <a href="#">Сливочное с мятным сиропом</a>
+                </div>
+            </div>
+            <div class="page">
+                <ol class="page-number">
+                    <li class="active-page"></li>
+                    <li><a href=#></a></li>
+                    <li><a href=#></a></li>
+                    <li><a href=#></a></li>
+                    <li><a href=#></a></li>
+                </ol>
+                <a class="next-page" href="#">&#62;</a>
             </div>
         </main>
         <footer class="main-footer">
@@ -91,7 +185,7 @@
                 </section>
                 <section class="footer-copyright">
                     <a class="btn" href="#">HTMLAcademy.ru</a>
-                    <p>Сделанр в <a href="#">HTML Academy</a>&copy;2017</p>
+                    <p>Сделано в <a href="#">HTML Academy</a>&copy;2017</p>
                 </section>
             </div>
         </footer>
