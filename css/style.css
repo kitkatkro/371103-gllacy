@@ -1,0 +1,21 @@
+body {
+    /* Оформление текста */
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+h2 {
+    /* Оформление текста */
+    font-size: 35px;
+    line-height: 3px;
+}
+
+h3 {
+    /* Оформление текста */
+    line-height: 3px;
+    color: #5a5a5a;
+    font-weight: medium;
+}
