@@ -7,13 +7,20 @@ body {
     font-family: "Roboto";
 }
 
-h2 {
+.special-offer h2 {
     /* Оформление текста */
     font-size: 35px;
     line-height: 3px;
 }
 
-h3 {
+.filter h2 {
+    /* Оформление текста */
+    font-size: 14px;
+    line-height: 1px;
+    font-weight: medium;
+}
+
+.news-blog h3 {
     /* Оформление текста */
     line-height: 3px;
     color: #5a5a5a;
