@@ -99,9 +99,11 @@ body {
 }
 
 .description {
+    width: 1146px;
     height: 306px;
+    margin: 0 auto;
     margin-bottom: 40px;
-    background-color: #5db1fd;
+    background-color: #8df7ed;
 }
 
 .news {
@@ -145,7 +147,7 @@ body {
     background-color: #5db1fd;
 }
 
-form {
+.filter form {
     width: 879px;
     height: 145px;
     margin-bottom: 35px;
@@ -189,9 +191,16 @@ form {
 }
 
 .page-number {
+    float: right;
     width: 192px;
     height: 100px;
     background-color: #5db1fd;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /*----------------------------- Сетка для подвала ----------------------------*/
 .main-footer {
