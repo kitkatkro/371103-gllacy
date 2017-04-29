@@ -8,15 +8,14 @@ body {
 
     /* Сетка */
     width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 /* Сетка */
 .container {
     width: 1146px;
-    margin: 0 27px;
-    background-color: #148FFF;
+    margin: 0 auto;
 }
 
 .main-header {
@@ -26,11 +25,8 @@ body {
 }
 
 .main-header .container {
-    background-color: #fc3139;
-}
-
-.main-header .container {
     height: 72px;
+    background-color: #fc3139;
 }
 
 .main-navigation {
@@ -61,7 +57,8 @@ body {
     background-color: #ff6b71;
 }
 
-main {
+.main-container {
+    background-color: #148fff;
     font-size: 0;
 }
 
@@ -138,28 +135,46 @@ main {
 .contacts-info {
     height: 305px;
     width: 302px;
-    margin-left: 844px;
+    margin-left: 870px;
     margin-top: 62px;
     background-color: #aad6fe;
 }
 
 .main-footer {
-    margin-top:
     font-size: 0;
-    border-color: #7e1fff;
+    background-color: #7e1fff;
 }
 
 .main-footer .container {
+    height: 105px;
     background-color: #a463fd;
 }
 
 .footer-social {
+    float: left;
     width: 267px;
     height: 37px;
-    margin-top: 18px;
+    margin-top: 36px;
+    margin-right: 26px;
     background-color: #d6b9fe;
 }
 
+.footer-about {
+    float: left;
+    width: 560px;
+    height: 37px;
+    margin-top: 36px;
+    margin-right: 26px;
+    background-color: #d6b9fe;
+}
+
+.footer-copyright {
+    float: right;
+    width: 267px;
+    height: 54px;
+    margin-top: 18px;
+    background-color: #d6b9fe;
+}
 
 /* Оформление */
 .special-offer h2 {
