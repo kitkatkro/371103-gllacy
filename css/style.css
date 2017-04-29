@@ -5,8 +5,163 @@ body {
     color: #ffffff;
     font-weight: bold;
     font-family: "Roboto";
+
+    /* Сетка */
+    width: 1200px;
+    margin: 0;
+    padding: 0;
 }
 
+/* Сетка */
+.container {
+    width: 1146px;
+    margin: 0 27px;
+    background-color: #148FFF;
+}
+
+.main-header {
+    height: 124px;
+    background-color: #ff0f18;
+    font-size: 0;
+}
+
+.main-header .container {
+    background-color: #fc3139;
+}
+
+.main-header .container {
+    height: 72px;
+}
+
+.main-navigation {
+    display: inline-block;
+    width: 560px;
+    height: 72px;
+    margin: 0;
+    background-color: #ff6b71;
+}
+
+.user-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 267px;
+    height: 72px;
+    margin: 0;
+    margin-left: 319px;
+    background-color: #ff6b71;
+}
+
+.opening-hours {
+    display: inline-block;
+    width: 267px;
+    height: 52px;
+    margin: 0;
+    margin-left: 906px;
+    margin-right: 27px;
+    background-color: #ff6b71;
+}
+
+main {
+    font-size: 0;
+}
+
+.special-offer {
+    margin-top: 528px; /*Пока не поняла, как поступить со слайдами, поэтому сделала отступ */
+    margin-bottom: 35px;
+    background-color: #5db1fd;
+}
+
+.left-special-offer,
+.right-special-offer {
+    display: inline-block;
+    width: 560px;
+    height: 229px;
+    background-color: #aad6fe;
+    font-size: 16px;
+}
+
+.left-special-offer {
+    margin-right: 26px;
+}
+
+.catalog {
+    margin-bottom: 40px;
+    background-color: #5db1fd;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    height: 322px;
+    width: 267px;
+    margin-right: 26px;
+    background-color: #aad6fe;
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.description {
+    height: 306px;
+    margin-bottom: 40px;
+    background-color: #5db1fd;
+}
+
+.news {
+    background-color: #5db1fd;
+}
+
+.news-blog,
+.news-newsletter {
+    display: inline-block;
+    vertical-align: top;
+    width: 560px;
+    height: 220px;
+    background-color: #aad6fe;
+    font-size: 16px;
+}
+
+.news-blog {
+    margin-right: 26px;
+}
+
+.contacts {
+    height: 430px;
+    background-color: #5db1fd;
+}
+
+.contacts img {
+    display: none; /* Не поняла, как сделат карту, пока скрыла */
+}
+
+.contacts-info {
+    height: 305px;
+    width: 302px;
+    margin-left: 844px;
+    margin-top: 62px;
+    background-color: #aad6fe;
+}
+
+.main-footer {
+    margin-top:
+    font-size: 0;
+    border-color: #7e1fff;
+}
+
+.main-footer .container {
+    background-color: #a463fd;
+}
+
+.footer-social {
+    width: 267px;
+    height: 37px;
+    margin-top: 18px;
+    background-color: #d6b9fe;
+}
+
+
+/* Оформление */
 .special-offer h2 {
     /* Оформление текста */
     font-size: 35px;
