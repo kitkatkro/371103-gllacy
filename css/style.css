@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 
-/* Сетка */
+/*------------------------------ Сетка для шапки -----------------------------*/
 .container {
     width: 1146px;
     margin: 0 auto;
@@ -55,6 +55,7 @@ body {
     background-color: #ff6b71;
 }
 
+/*--------------------------- Сетка для index.html ---------------------------*/
 .main-container {
     background-color: #148fff;
     font-size: 0;
@@ -80,7 +81,6 @@ body {
 }
 
 .catalog {
-    margin-bottom: 40px;
     background-color: #5db1fd;
 }
 
@@ -89,11 +89,12 @@ body {
     vertical-align: top;
     height: 322px;
     width: 267px;
+    margin-bottom: 40px;
     margin-right: 26px;
     background-color: #aad6fe;
 }
 
-.item:last-child {
+.item:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -137,7 +138,62 @@ body {
     margin-top: 62px;
     background-color: #aad6fe;
 }
+/*-------------------------- Сетка для catalog.html --------------------------*/
+.breadcrumbs-list {
+    width: 267px;
+    height: 18px;
+    background-color: #5db1fd;
+}
 
+form {
+    width: 879px;
+    height: 145px;
+    margin-bottom: 35px;
+    background-color: #5db1fd;
+    font-size: 0;
+}
+
+.filter-sorting,
+.filter-price,
+.filter-fat-content,
+.filter-filler,
+.filter-button {
+    display: inline-block;
+    vertical-align: top;
+    height: 56px;
+    margin-right: 15px;
+    margin-bottom: 18px;
+    background-color: #aad6fe;
+    font-size: 14px;
+}
+
+.filter-sorting {
+    width: 193px;
+}
+
+.filter-price {
+    width: 219px;
+}
+
+.filter-fat-content {
+    width: 415px;
+}
+
+.filter-filler {
+    width: 703px;
+    margin-right: 14px;
+}
+
+.filter-button {
+    width: 144px;
+}
+
+.page-number {
+    width: 192px;
+    height: 100px;
+    background-color: #5db1fd;
+}
+/*----------------------------- Сетка для подвала ----------------------------*/
 .main-footer {
     font-size: 0;
     background-color: #7e1fff;
@@ -193,4 +249,8 @@ body {
     line-height: 3px;
     color: #5a5a5a;
     font-weight: medium;
+}
+
+.main-container h1 {
+    font-size: 35px;
 }
