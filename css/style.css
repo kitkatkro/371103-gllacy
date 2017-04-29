@@ -7,8 +7,7 @@ body {
     font-family: "Roboto";
 
     /* Сетка */
-    width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -52,8 +51,7 @@ body {
     width: 267px;
     height: 52px;
     margin: 0;
-    margin-left: 906px;
-    margin-right: 27px;
+    margin-left: 879px;
     background-color: #ff6b71;
 }
 
