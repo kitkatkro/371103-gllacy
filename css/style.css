@@ -3,24 +3,119 @@ body {
     font-size: 16px;
     line-height: 1.2em;
     color: #ffffff;
-    font-weight: bold;
-    font-family: "Roboto";
+    background-color:#97b4a4;
+    /*background-image: url("../../Макеты/gllacy/gllacy/preview/gllacy-index-1200.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;*/
+    font-family: "Roboto", "Arial", sans-serif;
 
     /* Сетка */
     margin: 0;
     padding: 0;
 }
 
+/* ---------------------------------------------------------------------------*/
+/* Горизонтальное меню основной навигации */
+.main-navigation .logo {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 11px;
+}
+
+.navigation-block {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    font-size: 0;
+}
+
+.navigation-block-point {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.navigation-block-point a {
+    display: block;
+    padding-left: 30px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    color: #ffffff;
+    vertical-align: middle;
+/* Подчеркивание ссылок цветом color: #c5d7cd; */
+}
+.user-block {
+    font-size: 0;
+}
+
+.user-block a {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 28px;
+    padding-bottom: 29px;
+}
+
+.user-block-search {
+    background: url("img/loupe.png") no-repeat;
+}
+
+.user-block-login {
+    background: url("img/login.png") no-repeat;
+    padding-left: 76px;
+}
+
+.user-block-shopping-cart {
+    background: url("img/shopping-cart.png") no-repeat;
+    padding-left: 70px;
+}
+
+.opening-hours {
+    display: inline-block;
+    width: 267px;
+    height: 52px;
+    margin: 0;
+    margin-left: 879px;
+}
+
+.opening-hours p {
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.opening-hours p strong {
+    font-size: 22px;
+    line-height: 24px;
+
+}
+
+.special-offer h2 {
+    /* Оформление текста */
+    font-size: 35px;
+    line-height: 41px;
+    padding: 22px;
+    margin: 0;
+    background-image: url("img/raspberry.jpg");
+
+}
+
+.special-offer {
+    font-size: 18px;
+    line-height: 22px;
+
+}
 /*------------------------------ Сетка для шапки -----------------------------*/
 .container {
     width: 1146px;
     margin: 0 auto;
 }
-
+/*
 .main-header {
     height: 124px;
-    background-color: #ff0f18;
-    font-size: 0;
 }
 
 .main-header .container {
@@ -54,11 +149,10 @@ body {
     margin-left: 879px;
     background-color: #ff6b71;
 }
-
+*/
 /*--------------------------- Сетка для index.html ---------------------------*/
 .main-container {
     background-color: #148fff;
-    font-size: 0;
 }
 
 .special-offer {
@@ -152,7 +246,6 @@ body {
     height: 145px;
     margin-bottom: 35px;
     background-color: #5db1fd;
-    font-size: 0;
 }
 
 .filter-sorting,
@@ -204,7 +297,6 @@ body {
 }
 /*----------------------------- Сетка для подвала ----------------------------*/
 .main-footer {
-    font-size: 0;
     background-color: #7e1fff;
 }
 
@@ -240,11 +332,7 @@ body {
 }
 
 /* Оформление */
-.special-offer h2 {
-    /* Оформление текста */
-    font-size: 35px;
-    line-height: 3px;
-}
+
 
 .filter h2 {
     /* Оформление текста */
