@@ -4,10 +4,8 @@ body {
     line-height: 1.2em;
     color: #ffffff;
     background-color:#97b4a4;
-    /*background-image: url("../../Макеты/gllacy/gllacy/preview/gllacy-index-1200.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0%;*/
     font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 700;
 
     /* Сетка */
     margin: 0;
@@ -16,176 +14,225 @@ body {
 
 /* ---------------------------------------------------------------------------*/
 /* Горизонтальное меню основной навигации */
-.main-navigation .logo {
-    display: block;
-    padding-top: 9px;
-    padding-bottom: 11px;
+.main-header {
+    margin-top: 9px;
 }
-
+.main-navigation {
+    float:left;
+}
+.main-navigation .logo {
+    margin-right: 10px;
+}
 .navigation-block {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline;
+    display: inline-block;
     font-size: 0;
+    vertical-align: top;
 }
-
 .navigation-block-point {
+    position: relative;
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
 }
-
 .navigation-block-point a {
     display: block;
-    padding-left: 30px;
-    padding-top: 28px;
-    padding-bottom: 29px;
+    padding: 20px 14px;
     color: #ffffff;
-    vertical-align: middle;
-/* Подчеркивание ссылок цветом color: #c5d7cd; */
+/*Подчеркивание ссылок цветом color: #c5d7cd;*/
+}
+.navigation-block-point a:hover,
+.user-block a:hover {
+    background-color: #f8f7f4;
+    color: #333333;
+    text-decoration: none;
+}
+.sub-navigation {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #ffffff;
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    z-index: 10;
+}
+.sub-navigation-block-point a{
+    padding: 0 22px;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+.navigation-block-point a:hover .sub-navigation {
+    display: block;
 }
 .user-block {
+    display: inline-block;
+    margin-left: 335px;
+    vertical-align: top;
     font-size: 0;
+    width: 267px;
 }
-
 .user-block a {
-    font-size: 16px;
+    position: relative;
+    padding: 20px 0;
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
     color: #ffffff;
-    padding-top: 28px;
-    padding-bottom: 29px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 10px;
 }
-
 .user-block-search {
-    background: url("img/loupe.png") no-repeat;
+    width: 32px;
+    display: block;
+    background: url("../img/loupe.png") no-repeat 50% 50%;
+    text-indent: -9999px;
 }
-
 .user-block-login {
-    background: url("img/login.png") no-repeat;
-    padding-left: 76px;
+    position: relative;
+    padding-left: 45px;
 }
-
+.user-block-login::before {
+    display: block;
+    position: absolute;
+    right: 41px;
+    content: "";
+    width: 21px;
+    height: 19px;
+    background: url("../img/login.png") no-repeat 50% 50%;
+}
 .user-block-shopping-cart {
-    background: url("img/shopping-cart.png") no-repeat;
-    padding-left: 70px;
+    position: relative;
+    display: block;
+    padding-left: 45px;
 }
-
+.user-block-shopping-cart::before {
+    display: block;
+    position: absolute;
+    right: 46px;
+    content: "";
+    width: 21px;
+    height: 20px;
+    background: url("../img/shopping-cart.png") no-repeat 50% 50%;
+}
 .opening-hours {
     display: inline-block;
     width: 267px;
     height: 52px;
     margin: 0;
-    margin-left: 879px;
+    margin-left: 852px;
 }
-
 .opening-hours p {
     text-align: right;
     font-size: 14px;
     line-height: 16px;
 }
-
 .opening-hours p strong {
     font-size: 22px;
     line-height: 24px;
-
 }
 
-.special-offer h2 {
-    /* Оформление текста */
-    font-size: 35px;
-    line-height: 41px;
-    padding: 22px;
-    margin: 0;
-    background-image: url("img/raspberry.jpg");
 
-}
 
-.special-offer {
-    font-size: 18px;
-    line-height: 22px;
-
-}
 /*------------------------------ Сетка для шапки -----------------------------*/
 .container {
     width: 1146px;
     margin: 0 auto;
+    outline: 1px solid red;
 }
-/*
-.main-header {
-    height: 124px;
-}
-
-.main-header .container {
-    height: 72px;
-    background-color: #fc3139;
-}
-
-.main-navigation {
-    display: inline-block;
-    width: 560px;
-    height: 72px;
-    margin: 0;
-    background-color: #ff6b71;
-}
-
-.user-block {
-    display: inline-block;
-    vertical-align: top;
-    width: 267px;
-    height: 72px;
-    margin: 0;
-    margin-left: 319px;
-    background-color: #ff6b71;
-}
-
-.opening-hours {
-    display: inline-block;
-    width: 267px;
-    height: 52px;
-    margin: 0;
-    margin-left: 879px;
-    background-color: #ff6b71;
-}
-*/
 /*--------------------------- Сетка для index.html ---------------------------*/
-.main-container {
-    background-color: #148fff;
-}
 
 .special-offer {
     margin-top: 528px; /*Пока не поняла, как поступить со слайдами, поэтому сделала отступ */
     margin-bottom: 35px;
-    background-color: #5db1fd;
+    font-size: 0;
 }
 
 .left-special-offer,
 .right-special-offer {
     display: inline-block;
-    width: 560px;
-    height: 229px;
-    background-color: #aad6fe;
-    font-size: 16px;
+    width: 513px;
+    height: 230px;
+    padding: 0;
+    padding-left: 21px;
+    padding-right: 19px;
+    font-size: 18px;
+    line-height: 22px;
 }
-
+.special-offer h2 {
+    Оформление текста
+    font-size: 35px;
+    line-height: 41px;
+}
 .left-special-offer {
     margin-right: 26px;
+    background: url("../img/raspberry.jpg");
+}
+.right-special-offer {
+    background: url("../img/chocolate.jpg");
 }
 
+.button {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #e74a35;
+    padding: 14px 24px;
+}
+.special-offer .button {
+    float: right;
+}
 .catalog {
-    background-color: #5db1fd;
+    font-size: 0;
 }
-
 .item {
+    margin: 0;
+    padding: 0;
     display: inline-block;
+    position: relative;
     vertical-align: top;
     height: 322px;
     width: 267px;
     margin-bottom: 40px;
     margin-right: 26px;
-    background-color: #aad6fe;
+}
+
+.item::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 61px;
+    height: 69px;
+    background: url("../img/hit.png") no-repeat;
+}
+.item p {
+    position: absolute;
+    left: 0;
+    bottom: 37px;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.item p strong {
+    font-size: 45px;
+}
+
+.item a {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .item:nth-child(4n) {
@@ -194,11 +241,62 @@ body {
 
 .description {
     width: 1146px;
-    height: 306px;
+    max-height: 306px;
     margin: 0 auto;
     margin-bottom: 40px;
-    background-color: #8df7ed;
+    background: url("../img/wafer.png");
+    color: #323232;
+    font-size: 0;
 }
+
+.description p strong {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 21px;
+}
+
+.description-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.description-item {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    width: 483px;
+    margin-right: 26px;
+    padding-left: 77px;
+    margin-bottom: 30px;
+}
+
+.description-item::before {
+    position: absolute;
+    left: 24px;
+    top: -18px;
+    content: "";
+    width: 49px;
+    height: 49px;
+
+}
+
+.description-item:nth-child(1)::before {
+    background: url("../img/ice-cream.png") no-repeat;
+}
+.description-item:nth-child(2)::before {
+    background: url("../img/foliage.png") no-repeat;
+}
+.description-item:nth-child(3)::before {
+    background: url("../img/cow.png") no-repeat;
+}
+.description-item:nth-child(4)::before {
+    background: url("../img/thermometer.png") no-repeat;
+}
+
+
 
 .news {
     background-color: #5db1fd;
