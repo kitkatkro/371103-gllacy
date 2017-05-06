@@ -1,337 +1,681 @@
 body {
-    /* Оформление текста */
-    font-size: 16px;
-    line-height: 1.2em;
-    color: #ffffff;
-    background-color:#97b4a4;
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 700;
-
-    /* Сетка */
+    /* Блочная модель */
     margin: 0;
     padding: 0;
+    /* Оформление текста */
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #ffffff;
+    /* Фон */
+    background: #97b4a4;
 }
-
-/* ---------------------------------------------------------------------------*/
-/* Горизонтальное меню основной навигации */
+/*---------------------------------- Шапка -----------------------------------*/
 .main-header {
+    /* Блочная модель */
     margin-top: 9px;
 }
 .main-navigation {
-    float:left;
+    /* Управление потоком */
+    display: inline-block;
 }
 .main-navigation .logo {
+    /* Блочная модель */
     margin-right: 10px;
 }
 .navigation-block {
+    /* Управление потоком */
+    display: inline-block;
+    /* Блочная модель */
     margin: 0;
     padding: 0;
-    list-style: none;
-    display: inline-block;
-    font-size: 0;
     vertical-align: top;
+    /* Оформление текста */
+    font-size: 0;
+    list-style: none;
 }
 .navigation-block-point {
-    position: relative;
+    /* Управление потоком */
     display: inline-block;
+    vertical-align: top;
     font-size: 16px;
     line-height: 18px;
 }
 .navigation-block-point a {
+    /* Позиционирование */
+    position: relative;
+    /* Управление потоком */
     display: block;
+    /* Блочная модель */
     padding: 20px 14px;
+    /* Оформление текста */
     color: #ffffff;
-/*Подчеркивание ссылок цветом color: #c5d7cd;*/
 }
 .navigation-block-point a:hover,
 .user-block a:hover {
-    background-color: #f8f7f4;
-    color: #333333;
+    /* Оформление текста */
     text-decoration: none;
+    color: #333333;
+    /* Фон */
+    background: #f8f7f4;
 }
 .sub-navigation {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background: #ffffff;
-    display: none;
+    /* Позиционирование */
     position: absolute;
-    bottom: 40px;
+    top: 40px;
     z-index: 10;
+    /* Блочная модель */
+    margin: 0;
+    padding: 0;
+    /* Оформление текста */
+    list-style: none;
+    /* Фон */
+    background: #ffffff;
 }
-.sub-navigation-block-point a{
+.sub-navigation-block-point a {
+    /* Управление потоком */
+    display: block;
+    /* Блочная модель */
     padding: 0 22px;
+    /* Оформление текста */
     font-size: 16px;
     line-height: 18px;
     text-decoration: none;
     color: #333333;
-    display: block;
 }
 .navigation-block-point a:hover .sub-navigation {
+    /* Управление потоком */
     display: block;
 }
 .user-block {
+    /* Позиционирование */
+    position: relative;
+    /* Управление потоком */
     display: inline-block;
-    margin-left: 335px;
+    /* Блочная модель */
+    width: 264px;
+    height: 32px;
+    margin-left: 334px;
     vertical-align: top;
+    /* Оформление текста */
     font-size: 0;
-    width: 267px;
 }
 .user-block a {
+    /* Позиционирование */
     position: relative;
-    padding: 20px 0;
+    /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
+    padding: 20px 0;
     vertical-align: top;
-    text-decoration: none;
-    color: #ffffff;
+    /* Оформление текста */
     font-size: 14px;
     line-height: 18px;
-    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
 }
-.user-block-search {
-    width: 32px;
-    display: block;
-    background: url("../img/loupe.png") no-repeat 50% 50%;
+.user-block .user-block-search {
+    /* Блочная модель */
+    width: 33px;
+    margin-right: 11px;
+    /* Оформление текста */
     text-indent: -9999px;
+    /* Фон */
+    background: url("../img/loupe.png") no-repeat 50% 50%;
 }
-.user-block-login {
+.user-block .user-block-search:hover {
+    /* Блочная модель */
+    width: 33px;
+    margin-right: 11px;
+    /* Оформление текста */
+    text-indent: -9999px;
+    /* Фон */
+    background: #ffffff url("../img/loupe-active.png") no-repeat 50% 50%;
+}
+.user-block .user-block-login {
+    /* Позиционирование */
     position: relative;
+    /* Блочная модель */
+    width: 48px;
+    margin-right: 10px;
     padding-left: 45px;
 }
 .user-block-login::before {
-    display: block;
+    /* Позиционирование */
     position: absolute;
-    right: 41px;
+    left: 16px;
+    /* Управление потоком */
+    display: block;
+    /* Блочная модель */
     content: "";
     width: 21px;
     height: 19px;
+    /* Фон */
     background: url("../img/login.png") no-repeat 50% 50%;
 }
-.user-block-shopping-cart {
-    position: relative;
+.user-block .user-block-login:hover::before {
+    /* Позиционирование */
+    position: absolute;
+    left: 16px;
+    /* Управление потоком */
     display: block;
+    /* Блочная модель */
+    content: "";
+    width: 21px;
+    height: 19px;
+    /* Фон */
+    background: url("../img/login-active.png") no-repeat 50% 50%;
+}
+}
+.user-block .user-block-shopping-cart {
+    /* Позиционирование */
+    position: relative;
+    /* Блочная модель */
+    width: 72px;
+    margin-right: 0;
     padding-left: 45px;
 }
 .user-block-shopping-cart::before {
-    display: block;
+    /* Позиционирование */
     position: absolute;
-    right: 46px;
+    left: 16px;
+    /* Управление потоком */
+    display: block;
+    /* Блочная модель */
     content: "";
     width: 21px;
     height: 20px;
+    /* Фон */
     background: url("../img/shopping-cart.png") no-repeat 50% 50%;
 }
 .opening-hours {
+    /* Управление потоком */
     display: inline-block;
-    width: 267px;
+    /* Блочная модель */
+    width: 262px;
     height: 52px;
     margin: 0;
-    margin-left: 852px;
+    margin-left: 885px;
 }
 .opening-hours p {
-    text-align: right;
+    /* Оформление текста */
     font-size: 14px;
     line-height: 16px;
+    text-align: right;
 }
 .opening-hours p strong {
+    /* Оформление текста */
     font-size: 22px;
     line-height: 24px;
 }
-
-
-
-/*------------------------------ Сетка для шапки -----------------------------*/
+/*-------------------------------- index.html --------------------------------*/
 .container {
+    /* Блочная модель */
     width: 1146px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
-/*--------------------------- Сетка для index.html ---------------------------*/
-
+.container > .button {
+    display: none;
+}
 .special-offer {
-    margin-top: 528px; /*Пока не поняла, как поступить со слайдами, поэтому сделала отступ */
+    /* Блочная модель */
+    margin-top: 528px;
     margin-bottom: 35px;
+    /* Оформление текста */
     font-size: 0;
 }
-
 .left-special-offer,
 .right-special-offer {
+    /* Управление потоком */
     display: inline-block;
-    width: 513px;
+    /* Блочная модель */
+    width: 520px;
     height: 230px;
     padding: 0;
     padding-left: 21px;
     padding-right: 19px;
+    /* Оформление текста */
     font-size: 18px;
     line-height: 22px;
 }
 .special-offer h2 {
-    Оформление текста
+    /* Оформление текста */
     font-size: 35px;
     line-height: 41px;
 }
 .left-special-offer {
+    /* Блочная модель */
     margin-right: 26px;
+    /* Фон */
     background: url("../img/raspberry.jpg");
 }
 .right-special-offer {
+    /* Фон */
     background: url("../img/chocolate.jpg");
 }
-
 .button {
+    /* Блочная модель */
+    padding: 14px 24px;
+    /* Оформление текста */
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
     text-decoration: none;
-    background-color: #e74a35;
-    padding: 14px 24px;
+    color: #ffffff;
+    /* Фон */
+    background: #e74a35;
 }
 .special-offer .button {
+    /* Управление потоком */
     float: right;
 }
 .catalog {
+    /* Оформление текста */
     font-size: 0;
 }
 .item {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+    /* Позиционирование */
     position: relative;
-    vertical-align: top;
-    height: 322px;
+    /* Управление потоком */
+    display: inline-block;
+    /* Блочная модель */
     width: 267px;
+    height: 322px;
+    margin: 0;
     margin-bottom: 40px;
     margin-right: 26px;
+    padding: 0;
+    vertical-align: top;
 }
-
 .item::before {
-    display: block;
+    /* Позиционирование */
     position: absolute;
     left: 0;
     top: 0;
+    /* Управление потоком */
+    display: block;
+    /* Блочная модель */
     content: "";
     width: 61px;
     height: 69px;
+    /* Фон */
     background: url("../img/hit.png") no-repeat;
 }
 .item p {
+    /* Позиционирование */
     position: absolute;
     left: 0;
     bottom: 37px;
+    /* Оформление текста */
     font-size: 30px;
     line-height: 45px;
 }
-
 .item p strong {
+    /* Оформление текста */
     font-size: 45px;
 }
-
 .item a {
+    /* Управление потоком */
     display: block;
+    /* Оформление текста */
     font-size: 16px;
+    font-weight: 500;
     line-height: 22px;
     text-align: center;
     color: #ffffff;
-    font-weight: 500;
 }
-
 .item:nth-child(4n) {
+    /* Блочная модель */
     margin-right: 0;
 }
-
 .description {
+    /* Блочная модель */
     width: 1146px;
-    max-height: 306px;
+    height: 306px;
     margin: 0 auto;
     margin-bottom: 40px;
-    background: url("../img/wafer.png");
-    color: #323232;
+    /* Оформление текста */
     font-size: 0;
+    color: #323232;
+    /* Фон */
+    background: url("../img/wafer.png") repeat;
 }
-
 .description p strong {
+    /* Управление потоком */
     display: block;
+    /* Блочная модель */
+    padding: 21px;
+    /* Оформление текста */
     font-size: 24px;
     line-height: 30px;
-    padding: 21px;
 }
-
 .description-list {
+    /* Блочная модель */
     margin: 0;
     padding: 0;
+    /* Оформление текста */
     list-style: none;
 }
-
 .description-item {
+    /* Позиционирование */
     position: relative;
+    /* Управление потоком */
     display: inline-block;
-    font-size: 16px;
-    line-height: 22px;
+    /* Блочная модель */
     width: 483px;
+    margin-bottom: 30px;
     margin-right: 26px;
     padding-left: 77px;
-    margin-bottom: 30px;
+    vertical-align: top;
+    /* Оформление текста */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
 }
-
+.description-item:nth-child(2n) {
+    /* Блочная модель */
+    margin-right: 0;
+}
 .description-item::before {
+    /* Позиционирование */
     position: absolute;
-    left: 24px;
     top: -18px;
+    left: 20px;
+    /* Блочная модель */
     content: "";
     width: 49px;
     height: 49px;
-
 }
-
 .description-item:nth-child(1)::before {
+    /* Фон */
     background: url("../img/ice-cream.png") no-repeat;
 }
 .description-item:nth-child(2)::before {
-    background: url("../img/foliage.png") no-repeat;
-}
-.description-item:nth-child(3)::before {
+    /* Фон */
     background: url("../img/cow.png") no-repeat;
 }
+.description-item:nth-child(3)::before {
+    /* Фон */
+    background: url("../img/foliage.png") no-repeat;
+}
 .description-item:nth-child(4)::before {
+    /* Фон */
     background: url("../img/thermometer.png") no-repeat;
 }
-
-
-
 .news {
-    background-color: #5db1fd;
+    /* Блочная модель */
+    font-size: 0;
+    /* Оформление текста */
+    margin-bottom: 40px;
 }
-
 .news-blog,
 .news-newsletter {
+    /* Управление потоком */
     display: inline-block;
-    vertical-align: top;
+    /* Блочная модель */
     width: 560px;
     height: 220px;
-    background-color: #aad6fe;
+    vertical-align: top;
+    /* Оформление текста */
     font-size: 16px;
 }
-
 .news-blog {
+    /* Блочная модель */
     margin-right: 26px;
+    /* Фон */
+    background: url("../img/strawberry.jpg") no-repeat -54px -225px;
 }
-
+.news-blog h3{
+    /* Блочная модель */
+    padding-left: 21px;
+    /* Оформление текста */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #323232;
+}
+.news-blog a {
+    /* Управление потоком */
+    display: inline-block;
+    /* Блочная модель */
+    padding-left: 21px;
+    padding-right: 244px;
+    /* Оформление текста */
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+.news-newsletter {
+    /* Фон */
+    background: #f8f7f4 url("../img/lines.png") repeat;
+}
+.news-newsletter-container {
+    /* Блочная модель */
+    width: 508px;
+    height: 168px;
+    margin-left: 7px;
+    margin-right: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 20px;
+    /* Оформление текста */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #5a5a5a;
+    /* Фон */
+    background: #f8f7f4;
+}
+.news-newsletter form {
+    /* Блочная модель */
+    margin-top: 40px;
+    /* Оформление текста */
+    font-size: 0;
+}
+.news-newsletter form input[type=email] {
+    /* Блочная модель */
+    width: 348px;
+    height: 42px;
+    margin-right: 11px;
+    padding-left: 15px;
+    /* Оформление текста */
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+}
+.news-newsletter .button {
+    /* Блочная модель */
+    width: 130px;
+    padding-left: 21px;
+    /* Оформление текста */
+    font-weight: 400;
+}
 .contacts {
+    /* Позиционирование */
+    position: relative;
+    /* Блочная модель */
+    width: 1146px;
     height: 430px;
-    background-color: #5db1fd;
+    margin: 0 auto;
 }
-
 .contacts img {
-    display: none; /* Не поняла, как сделат карту, пока скрыла */
+    /* Позиционирование */
+    position: relative;
+    left: -27px;
+}
+.contacts::after {
+    /* Позиционирование */
+    position: absolute;
+    top: 139px;
+    left: 240px;
+    /* Блочная модель */
+    content: "";
+    width: 218px;
+    height: 142px;
+    /* Фон */
+    background: url("../img/map-index.png") no-repeat;
+}
+.contacts-info {
+    /* Позиционирование */
+    position: absolute;
+    top: 63px;
+    right: 0;
+    /* Блочная модель */
+    width: 250px;
+    height: 293px;
+    padding: 6px 26px;
+    /* Оформление текста */
+    color: #323232;
+    /* Фон */
+    background: #fffefe;
+}
+.contacts-info p {
+    /* Оформление текста */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contacts-info p strong {
+    /* Управление потоком элементов */
+    display: inline-block;
+    /* Блочная модель */
+    padding-top: 6px;
+    /* Оформление текста */
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.contacts-info a {
+    /* Управление потоком элементов */
+    display: block;
+    /* Блочная модель */
+    margin-top: 30px;
+}
+/*---------------------------------- Подвал ----------------------------------*/
+.main-footer {
+    /* Блочная модель */
+    height: 105px;
+    /* Оформление текста */
+    font-size: 0;
+}
+.footer-social {
+    /* Управление потоком элементов */
+    display: inline-block;
+    /* Блочная модель */
+    width: 240px;
+    height: 63px;
+    margin-top: 36px;
+    margin-bottom: 21px;
+    margin-right: 161px;
+    vertical-align: top;
+}
+.social-btn {
+    /* Управление потоком элементов */
+    display: inline-block;
+    /* Блочная модель */
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    vertical-align: middle;
+    /* Оформление текста */
+    text-indent: -9999px;
+}
+.social-btn-tw{
+    /* Фон */
+    background: url("../img/twitter.png") no-repeat 50% 50%;
+}
+.social-btn-inst{
+    /* Фон */
+    background: url("../img/instagram.png") no-repeat 50% 50%;
+}
+.social-btn-fb{
+    /* Фон */
+    background: url("../img/facebook.png") no-repeat 50% 50%;
+}
+.social-btn-vk{
+    /* Фон */
+    background: url("../img/vk.png") no-repeat 50% 50%;
+}
+.footer-about {
+    /* Управление потоком элементов */
+    display: inline-block;
+    /* Блочная модель */
+    width: 340px;
+    margin-top: 34px;
+    /* Оформление текста */
+    font-size: 0;
+}
+.footer-about a {
+    /* Управление потоком элементов */
+    display: block;
+    /* Оформление текста */
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+}
+.left-footer-about {
+    /* Управление потоком элементов */
+    display: inline-block;
+    /* Блочная модель */
+    width: 160px;
+    height: 63px;
+}
+.left-footer-about a {
+    /* Позиционирование */
+    position: relative;
+    /* Блочная модель */
+    padding-left: 22px;
+}
+.left-footer-about a b::before {
+    /* Позиционирование */
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    /* Блочная модель */
+    content: "";
+    width: 15px;
+    height: 13px;
+    /* Фон */
+    background: url("../img/heart.png") no-repeat;
+}
+.right-footer-about {
+    /* Управление потоком */
+    display: inline-block;
+    /* Блочная модель */
+    width: 180px;
+    height: 63px;
+}
+.footer-copyright {
+    /* Управление потоком */
+    display: inline-block;
+    /* Блочная модель */
+    width: 187px;
+    height: 63px;
+    margin-top: 18px;
+    margin-left: 218px;
+    /* Оформление текста */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+}
+.footer-copyright .btn {
+    /* Управление потоком */
+    display: block;
+    /* Блочная модель */
+    width: 108px;
+    height: 38px;
+    /* Оформление текста */
+    text-indent: -9999px;
+    /* Фон */
+    background: url("../img/logo-html-academy.png") no-repeat;
+}
+.footer-copyright a {
+    /* Оформление текста */
+    color: #ffffff;
 }
 
-.contacts-info {
-    height: 305px;
-    width: 302px;
-    margin-left: 870px;
-    margin-top: 62px;
-    background-color: #aad6fe;
-}
 /*-------------------------- Сетка для catalog.html --------------------------*/
 .breadcrumbs-list {
     width: 267px;
@@ -393,41 +737,7 @@ body {
     display: table;
     clear: both;
 }
-/*----------------------------- Сетка для подвала ----------------------------*/
-.main-footer {
-    background-color: #7e1fff;
-}
 
-.main-footer .container {
-    height: 105px;
-    background-color: #a463fd;
-}
-
-.footer-social {
-    float: left;
-    width: 267px;
-    height: 37px;
-    margin-top: 36px;
-    margin-right: 26px;
-    background-color: #d6b9fe;
-}
-
-.footer-about {
-    float: left;
-    width: 560px;
-    height: 37px;
-    margin-top: 36px;
-    margin-right: 26px;
-    background-color: #d6b9fe;
-}
-
-.footer-copyright {
-    float: right;
-    width: 267px;
-    height: 54px;
-    margin-top: 18px;
-    background-color: #d6b9fe;
-}
 
 /* Оформление */
 
@@ -439,12 +749,6 @@ body {
     font-weight: medium;
 }
 
-.news-blog h3 {
-    /* Оформление текста */
-    line-height: 3px;
-    color: #5a5a5a;
-    font-weight: medium;
-}
 
 .main-container h1 {
     font-size: 35px;

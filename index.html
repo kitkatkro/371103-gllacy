@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -102,22 +102,22 @@
                     <p>
                         <strong>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</strong>
                     </p>
-                    <ul class="description-list">
-                        <li class="description-item">
+                    <div class="description-list">
+                        <div class="description-item">
                             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенныз временем технологий.
-                        </li>
-                        <li class="description-item">
+                        </div>
+                        <div class="description-item">
+                            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                        </div>
+                        <div class="description-item">
                             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
                             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-                        </li>
-                        <li class="description-item">
-                            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                        </li>
-                        <li class="description-item">
+                        </div>
+                        <div class="description-item">
                             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
                             который не дает мороженому растаять в пути и позволяет слхранить превосходный вкус.
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="news">
@@ -127,19 +127,20 @@
                         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
                     </div>
                     <div class="news-newsletter">
-                        <p>
+                        <div class="news-newsletter-container">
                             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
                             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                        </p>
                         <form action="#" method="post">
                             <input type="email" name="e-mail" value="Электронная почта">
-                            <input type="submit" value="Отправить" class="button">
+                            <input type="submit" class="button" value="Отправить">
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>
             <div class="contacts">
-                <img src="img/map.png" alt="Map" width="900px" height="744px">
+                <div class="container">
+                <img src="img/map.png" alt="Map" width="1200px" height="430px">
                 <div class="contacts-info">
                     <p>
                         Адрес главного офиса<br>
@@ -153,25 +154,30 @@
                     </p>
                     <a class="button" href="#">Форма обратной связи</a>
                 </div>
+                </div>
             </div>
         </main>
         <footer class="main-footer">
             <div class="container">
                 <section class="footer-social">
-                    <a class="social-btn social-btn-twit" href="#">Твиттер</a>
+                    <a class="social-btn social-btn-tw" href="#">Твиттер</a>
                     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
                     <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                     <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 </section>
                 <section class="footer-about">
-                    <a href="#"><b>Для поставщиков</b></a>
-                    <a href="#">О производстве</a>
-                    <a href="#">Наши документы</a>
-                    <a href="#">Экологические стандарты</a>
+                    <div class="left-footer-about">
+                        <a href="#"><b>Для поставщиков</b></a>
+                        <a href="#">О производстве</a>
+                    </div>
+                    <div class="right-footer-about">
+                        <a href="#">Наши документы</a>
+                        <a href="#">Экологические стандарты</a>
+                    </div>
                 </section>
                 <section class="footer-copyright">
-                    <a class="btn" href="#">HTMLAcademy.ru</a>
-                    <p>Сделано в <a href="#">HTML Academy</a>&copy;2017</p>
+                    <a class="btn" href="https://htmlacademy.ru">HTMLAcademy.ru</a>
+                    Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy;2017
                 </section>
             </div>
         </footer>
