@@ -49,8 +49,8 @@ body {
     /* Управление потоком */
     display: block;
     /* Блочная модель */
-    margin: 14px 8px;
-    padding: 6px;
+    margin: 14px 0;
+    padding: 6px 14px;
     /* Оформление текста */
     color: #ffffff;
 }
@@ -401,8 +401,8 @@ body {
     width: 1146px;
     margin: 0 auto;
 }
-.container > .button {
-    display: none;
+form:hover input[type=text]{
+    border: solid 2px rgba(154,154,154,0.5);
 }
 .special-offer {
     /* Блочная модель */
@@ -424,6 +424,8 @@ body {
     /* Оформление текста */
     font-size: 18px;
     line-height: 22px;
+    /* Декоративные элементы */
+    border-radius: 10px;
 }
 .special-offer h2 {
     /* Оформление текста */
@@ -449,6 +451,8 @@ body {
     text-decoration: none;
     color: #ffffff;
     /* Фон */
+    background-image: -moz-linear-gradient(to bottom, #f26843, #e74a35);
+    background-image: -webkit-linear-gradient(to bottom, #f26843, #e74a35);
     background-image: linear-gradient(to bottom, #f26843, #e74a35);
     /* Декоративные элементы */
     border-radius: 32px;
@@ -456,14 +460,17 @@ body {
 }
 .button:hover {
     /* Фон */
-    background-color: rgba(255,255,255,0.2);
-    background-image: linear-gradient(to bottom, #f26843, #e74a35);
+    background-image: -moz-linear-gradient(to bottom, #f58669, #ec6f5e);
+    background-image: -webkit-linear-gradient(to bottom, #f58669, #ec6f5e);
+    background-image: linear-gradient(to bottom, #f58669, #ec6f5e5);
     /* Декоративные элементы */
     box-shadow: 0 2px 2px 0 #ac1000;
 }
 .button:active {
     /* Фон */
-    background: rgba(0,0,0,0.7) linear-gradient(to top, #f26843, #e74a35);
+    background-image: -moz-linear-gradient(to bottom, #d84732, #e1613e);
+    background-image: -webkit-linear-gradient(to bottom, #d84732, #e1613e);
+    background-image: linear-gradient(to bottom, #d84732, #e1613e);
     /* Декоративные элементы */
     box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -475,6 +482,13 @@ body {
     /* Оформление текста */
     font-size: 0;
 }
+.item .item-button {
+    /* Управление потоком */
+    display: none;
+    /* Оформление текста */
+    font-size: 18px;
+    line-height: 24px;
+}
 .item {
     /* Позиционирование */
     position: relative;
@@ -482,7 +496,7 @@ body {
     display: inline-block;
     /* Блочная модель */
     width: 267px;
-    height: 322px;
+    min-height: 322px;
     margin: 0;
     margin-bottom: 40px;
     margin-right: 26px;
@@ -504,16 +518,22 @@ body {
     background: url("../img/hit.png") no-repeat;
 }
 .item:hover {
-    background: rgba(157,177,165,0.2);
+    z-index: 10;
+    background: rgba(255,255,255,0.2);
+}
+.item:hover .item-button {
+    display: block;
 }
 .item p {
     /* Позиционирование */
     position: absolute;
     left: 0;
-    bottom: 37px;
+    top: 185px;
     /* Оформление текста */
     font-size: 30px;
     line-height: 45px;
+    /* Декоративные элементы */
+    text-shadow: 1px 1px 3px rgba(49,50,53,0.5);
 }
 .item p strong {
     /* Оформление текста */
@@ -549,6 +569,8 @@ body {
     color: #323232;
     /* Фон */
     background: url("../img/wafer.png") repeat;
+    /* Декоративные элементы */
+    border-radius: 10px;
 }
 .description p strong {
     /* Управление потоком */
@@ -628,6 +650,8 @@ body {
     vertical-align: top;
     /* Оформление текста */
     font-size: 16px;
+    /* Декоративные элементы */
+    border-radius: 10px;
 }
 .news-blog {
     /* Блочная модель */
@@ -793,12 +817,23 @@ body {
     /* Управление потоком элементов */
     display: inline-block;
     /* Блочная модель */
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     margin-right: 17px;
     vertical-align: middle;
     /* Оформление текста */
     text-indent: -9999px;
+    /* Декоративные элементы */
+    border: 4px solid rgba(255,255,255,0.5);
+    border-radius: 32px;
+}
+.social-btn:hover {
+    /* Декоративные элементы */
+    border: 4px solid rgba(255,255,255,0.7);
+}
+.social-btn:active {
+    /* Декоративные элементы */
+    box-shadow: inset 0 2px 1px 0 #696969;
 }
 .social-btn-tw{
     /* Фон */
