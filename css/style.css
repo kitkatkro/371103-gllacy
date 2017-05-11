@@ -679,7 +679,7 @@ body > input[type="radio"] {
 .special-offer {
     /* Блочная модель */
     margin-top: 42px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     /* Оформление текста */
     font-size: 0;
 }
@@ -756,6 +756,8 @@ body > input[type="radio"] {
 .catalog {
     /* Оформление текста */
     font-size: 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 .item .item-button {
     /* Управление потоком */
@@ -776,14 +778,14 @@ body > input[type="radio"] {
     min-height: 322px;
     margin: 0;
     margin-bottom: 40px;
-    margin-right: 26px;
-    padding: 0;
+    padding: 0 13px;
+    padding-top: 10px;
     vertical-align: top;
 }
 .item::before {
     /* Позиционирование */
     position: absolute;
-    left: 0;
+    left: 13px;
     top: 0;
     /* Управление потоком */
     display: block;
@@ -794,12 +796,19 @@ body > input[type="radio"] {
     /* Фон */
     background: url("../img/hit.png") no-repeat;
 }
-.catalog .item::before {
+.catalog-ice-cream .item::before {
     display: none;
 }
 .item:hover {
-    z-index: 10;
-    background: rgba(255,255,255,0.2);
+    background-color: rgba(248,247,244,0.3);
+	border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+	z-index:20;
+}
+}
+.item:hover a{
+    text-decoration: none;
 }
 .item:hover .item-button {
     display: block;
@@ -807,7 +816,7 @@ body > input[type="radio"] {
 .item p {
     /* Позиционирование */
     position: absolute;
-    left: 0;
+    left: 13px;
     top: 185px;
     /* Оформление текста */
     font-size: 30px;
