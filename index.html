@@ -17,10 +17,10 @@
                     <nav class="main-navigation">
                         <a class="logo"><img src="img/logo.png" alt="logo of GllacyShop" width="154px" height="64px"></a>
                         <ul class="navigation-block">
-                            <li class="navigation-block-point"><a href="catalog.html">Каталог</a>
+                            <li class="navigation-block-point"><a href="#">Каталог</a>
                                 <ul class="sub-navigation">
                                     <li class="sub-navigation-block-point"><a href="#">Новинки</a></li>
-                                    <li class="sub-navigation-block-point"><a href="#">Сливочное</a></li>
+                                    <li class="sub-navigation-block-point"><a href="catalog.html">Сливочное</a></li>
                                     <li class="sub-navigation-block-point"><a href="#">Щербеты</a></li>
                                     <li class="sub-navigation-block-point"><a href="#">Фруктовый лед</a></li>
                                     <li class="sub-navigation-block-point"><a href="#">Мелорин</a></li>
@@ -53,7 +53,7 @@
                                     </div>
                                 </form>
                             </li>
-                            <li class="user-block-shopping-cart-li">
+                            <li class="user-block-shopping-cart-li-empty">
                                 <a class="user-block-shopping-cart" href="#">Пусто</a>
                                 <div class="user-block-shopping-cart-content">
                                     <table class="user-block-shopping-cart-table">
@@ -270,6 +270,21 @@
                     </section>
                 </div>
             </footer>
+        </div>
+        <div class="modal-content">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <p>Мы обязательно вам ответим!</p>
+            <form class="modal-content-form" action="#" method="post">
+                <input type="text" id="name-1" name="name" placeholder="Как вас зовут?">
+                <label class="name1" for="name-1">Как вас зовут?</label>
+                <input type="email" id="email-1" name="email" placeholder="Ваша почта для ответа">
+                <label class="email" for="email-1">Ваша почта для ответа</label>
+                <textarea name="text" id="textarea-1" placeholder="Напишите что-нибудь..."></textarea>
+                <label class="textarea" for="textarea-1">Напишите что-нибудь...</label>
+                <button class="button">Отправить</button>
+            </form>
+        </div>
+        <div class="modal-overlay">
         </div>
     </body>
 </html>
