@@ -94,12 +94,12 @@ body > input[type="radio"] {
     /* Позиционирование */
     position: absolute;
     left: 0px;
+    top: 40px;
     z-index: 10;
     /* Управление потоком */
     display: none;
     /* Блочная модель */
     margin: 0;
-    margin-top: 5px;
     padding: 0;
     /* Оформление текста */
     list-style: none;
@@ -801,9 +801,10 @@ body > input[type="radio"] {
 }
 .item .item-button {
     /* Управление потоком */
-    display: none;
+    visibility: hidden;
     /* Блочная модель */
     margin-top: 24px;
+    margin-bottom: 24px;
     padding: 15px 13px;
     /* Оформление текста */
     font-size: 18px;
@@ -856,7 +857,7 @@ body > input[type="radio"] {
 }
 .item:hover .item-button {
     /* Управление потоком */
-    display: block;
+    visibility: visible;
 }
 .item p {
     /* Позиционирование */
@@ -892,11 +893,16 @@ body > input[type="radio"] {
     /* Блочная модель */
     margin-right: 0;
 }
+.item:nth-child(n+5) {
+    /* Блочная модель */
+    margin-top: -110px;
+}
 .description {
     /* Блочная модель */
     width: 1146px;
     height: 306px;
     margin: 0 auto;
+    margin-top: -90px;
     margin-bottom: 40px;
     /* Оформление текста */
     font-size: 0;
@@ -1066,35 +1072,38 @@ body > input[type="radio"] {
     font-weight: 400;
 }
 .contacts {
-    /* Позиционирование */
-    position: relative;
     /* Блочная модель */
-    width: 1146px;
     height: 430px;
-    margin: 0 auto;
 }
-.contacts img {
-    /* Позиционирование */
+.contacts iframe {
+    position: absolute;
+    z-index: 10;
+}
+/*.contacts img {
     position: relative;
     left: -27px;
 }
 .contacts::after {
-    /* Позиционирование */
     position: absolute;
     top: 139px;
     left: 240px;
-    /* Блочная модель */
     content: "";
     width: 218px;
     height: 142px;
-    /* Фон */
     background: url("../img/map-index.png") no-repeat;
+}*/
+.contacts-info-block {
+    position: relative;
+    width: 1146px;
+    height: 430px;
+    outline: 1px solid red;
 }
 .contacts-info {
     /* Позиционирование */
     position: absolute;
-    top: 63px;
+    top: 27px;
     right: 0;
+    z-index: 20;
     /* Блочная модель */
     width: 250px;
     height: 293px;
@@ -1571,6 +1580,9 @@ select option {
 	width:16px;
 	height:16px;
 }
+.fat-content-radio input:disabled+.indicator {
+    opacity: 0.4;
+}
 .filter-filler {
     margin-right: 14px;
 }
@@ -1620,6 +1632,9 @@ select option {
 }
 .filter-filler-checkbox input+.check-indicator:hover  {
 	background: url("../img/checkbox-unchecked-hover.png");
+}
+.filter-filler-checkbox input:disabled+.check-indicator {
+    opacity: 0.4;
 }
 .filter-button {
     height: 36px;
