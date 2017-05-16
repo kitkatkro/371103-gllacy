@@ -45,55 +45,57 @@ body > input[type="radio"] {
 .active-navigation-block-point {
     /* Позиционирование */
     position: relative;
-    /* Блочная модель */
-    margin: 14px 0;
-    padding: 6px 14px;
     /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
+    margin: 14px 0;
+    padding: 0;
+    padding-bottom: 10px;
     vertical-align: top;
+    /* Оформление текста */
     font-size: 16px;
     line-height: 18px;
 }
 .navigation-block-point a,
 .active-navigation-block-point a {
+    padding: 6px 14px;
+    padding-bottom: -10px;
     /* Управление потоком */
     display: block;
     /* Оформление текста */
     color: #ffffff;
 }
-.active-navigation-block-point a {
+.active-navigation-block-point > a {
     /* Оформление текста */
     text-decoration: none;
+    /* Фон */
+    background: #d07058;
+    /* Декоративные элементы */
+    border-radius: 16px;
 }
-.navigation-block-point:hover,
-.active-navigation-block-point:hover {
+.navigation-block-point:hover > a,
+.active-navigation-block-point:hover > a {
     /* Фон */
     background: #f8f7f4;
     /* Декоративные элементы */
     border-radius: 16px;
-}
-.navigation-block-point:hover a,
-.active-navigation-block-point:hover a {
     /* Оформление текста */
     text-decoration: none;
     color: #333333;
 }
 .active-navigation-block-point:active,
 .navigation-block >li:active {
+    /* Декоративные элементы */
     box-shadow: inset 0 2px 0 0 #696969;
 }
 .active-navigation-block-point {
     /* Оформление текста */
     color: #ffffff;
-    /* Фон */
-    background: #d07058;
-    /* Декоративные элементы */
-    border-radius: 16px;
 }
 .sub-navigation {
     /* Позиционирование */
     position: absolute;
-    left: 0px;
+    left: 5px;
     top: 40px;
     z-index: 10;
     /* Управление потоком */
@@ -131,11 +133,11 @@ body > input[type="radio"] {
     /* Оформление текста */
     color: #ffffff;
 }
-.sub-navigation li:first-child {                                                /* для линии */
+.sub-navigation li:first-child {
     /* Позиционирование */
     position: relative;
 }
-.sub-navigation li:first-child::after {                                         /* линия новинки */
+.sub-navigation li:first-child::after {
     /* Позиционирование */
     position: absolute;
     bottom:0;
@@ -897,6 +899,10 @@ body > input[type="radio"] {
     /* Блочная модель */
     margin-top: -110px;
 }
+.item:nth-child(n+8) {
+    /* Блочная модель */
+    margin-bottom: -60px;
+}
 .description {
     /* Блочная модель */
     width: 1146px;
@@ -1093,10 +1099,11 @@ body > input[type="radio"] {
     background: url("../img/map-index.png") no-repeat;
 }*/
 .contacts-info-block {
+    /* Позиционирование */
     position: relative;
+    /* Блочная модель */
     width: 1146px;
     height: 430px;
-    outline: 1px solid red;
 }
 .contacts-info {
     /* Позиционирование */
@@ -1314,22 +1321,29 @@ body > input[type="radio"] {
     top: 15px;
     right: 15px;
     /* Блочная модель */
-    background: #f8f7f4;
     width: 18px;
     height: 18px;
+    /* Оформление текста */
     font-size: 0;
+    /* Фон */
+    background: #f8f7f4;
+    /* Декоративные элементы */
     border: 0;
     outline: 0;
     cursor: pointer;
 }
 .modal-content-close::before,
 .modal-content-close::after {
-    content: "";
+    /* Позиционирование */
     position: absolute;
     right: 0;
+    /* Блочная модель */
+    content: "";
     width: 19px;
     height: 2px;
+    /* Фон */
     background-color: #323232;
+    /* Декоративные элементы */
     border-radius: 1px;
 }
 .modal-content-close::before {
@@ -1339,95 +1353,118 @@ body > input[type="radio"] {
     transform: rotate(-45deg);
 }
 .modal-content-form {
+    /* Оформление текста */
     font-size: 16px;
     font-family: "Roboto", "Arial", sans-serif;
     line-height: 28px;
 }
 .modal-content-form input {
-    padding: 11px;
+    /* Блочная модель */
     width: 245px;
-    font-weight: 400;
-    border-radius: 5px;
-    border: 1px solid #d3d3d2;
+    padding: 11px;
     margin-bottom: 20px;
+    /* Оформление текста */
+    font-weight: 400;
+    /* Декоративные элементы */
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 .modal-fcontent-form input:hover {
+    /* Блочная модель */
     padding: 10px;
-     border: 2px solid #c7c6c5;
+    /* Декоративные элементы */
+    border: 2px solid #c7c6c5;
 }
 .modal-content-form textarea {
-    padding: 11px;
+    /* Блочная модель */
     width: 406px;
     height: 130px;
-    border-radius: 5px;
-    border: 1px solid #d3d3d2;
+    padding: 11px;
     margin-bottom: 25px;
+    /* Декоративные элементы */
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 .modal-content-form textarea:hover {
-    border: 2px solid #c7c6c5;
+    /* Блочная модель */
     padding: 10px;
+    /* Декоративные элементы */
+    border: 2px solid #c7c6c5;
 }
 .modal-content-form label {
+    /* Управление потоком */
     visibility: hidden;
+    /* Оформление текста */
     font-size: 11px;
-    color: #5b9ddf;
     font-weight: 400;
+    color: #5b9ddf;
 }
 .modal-content-form .name1 {
+    /* Позиционирование */
     position: absolute;
     left: 40px;
     top: 40px;
 }
 .modal-content-form .email {
+    /* Позиционирование */
     position: absolute;
     left: 40px;
     top: 102px;
 }
 .modal-content-form .textarea {
+    /* Позиционирование */
     position: absolute;
     left: 40px;
     top: 164px;
 }
-.modal-content-form input:focus + label {
-    visibility: visible;
-}
+.modal-content-form input:focus + label,
 .modal-content-form textarea:focus + label {
+    /* Управление потоком */
     visibility: visible;
 }
-.modal-content-form input:focus {
-    padding: 10px;
-    border: 2px solid #8fbdec;
-}
+.modal-content-form input:focus,
 .modal-content-form textarea:focus {
-     padding: 10px;
+    /* Блочная модель */
+    padding: 10px;
+    /* Декоративные элементы */
     border: 2px solid #8fbdec;
 }
 .modal-content p {
+    /* Блочная модель */
     margin-bottom: 19px;
 }
 .modal-content-form button {
+    /* Управление потоком */
     float: right;
 }
-/*-------------------------- Сетка для catalog.html --------------------------*/
+/*-------------------------------catalog.html --------------------------------*/
 .breadcrumbs-list {
+    /* Позиционирование */
     position: absolute;
     top: 112px;
+    /* Блочная модель */
     width: 267px;
     height: 18px;
     margin: 0;
     padding: 0;
+    /* Оформление текста */
     list-style: none;
     font-size: 0;
 }
 .breadcrumbs-item {
+    /* Позиционирование */
     position: relative;
+    /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
+    margin-right: 20px;
+    /* Оформление текста */
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    margin-right: 20px;
 }
 .breadcrumbs-item a {
+    /* Оформление текста */
     color: #ffffff;
 }
 .breadcrumbs-list li:nth-child(2)::before,
@@ -1441,250 +1478,340 @@ body > input[type="radio"] {
     height: 1px;
 }
 .filter form {
+    /* Блочная модель */
     width: 879px;
     height: 145px;
     margin-bottom: 35px;
+    /* Оформление текста */
     font-size: 0;
 }
 h1 {
+    /* Блочная модель */
+    margin-top: 0;
+    /* Оформление текста */
     font-size: 35px;
     line-height: 41px;
-    margin-top: 0;
 }
 h2 {
+    /* Блочная модель */
+    margin-left: 16px;
+    margin-bottom: 5px;
+    /* Оформление текста */
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    margin-left: 16px;
-    margin-bottom: 5px;
 }
 .filter-sorting,
 .filter-price,
 .filter-fat-content,
 .filter-filler,
 .filter-button {
+    /* Управление потоком */
     display: inline-block;
-    vertical-align: top;
+    /* Блочная модель */
     height: 56px;
     margin-right: 15px;
     margin-bottom: 18px;
+    vertical-align: top;
+    /* Оформление текста */
     font-size: 14px;
 }
 .filter-sorting select {
+    /* Блочная модель */
+    width: 193px;
     padding: 8px 16px;
+    /* Оформление текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     color: white;
-    width: 193px;
+    /* Фон */
     background: rgba(255,255,255,0.2);
+    /* Декоративные элементы */
     border-radius: 18px;
     cursor: pointer;
 }
 select:hover {
-    background: rgba(255, 255, 255, 1);
+    /* Оформление текста */
     color: #323232;
+    /* Фон */
+    background: rgba(255, 255, 255, 1);
 }
 select option {
+    /* Оформление текста */
+    color: #323232;
+    /* Фон */
 	background-color: #ffffff;
+    /* Декоративные элементы */
 	border-radius: 10px;
-	color: #323232;
 }
 .filter-price {
+    /* Блочная модель */
     width: 219px;
 }
 .filter-range-controls {
+    /* Позиционирование */
 	position: relative;
+    /* Управление потоком */
+    overflow: hidden;
+    /* Блочная модель */
 	height: 36px;
 	padding: 0 15px;
+    /* Фон */
 	background: rgba(255, 255, 255, 0.2);
+    /* Декоративные элементы */
 	border-radius: 100px;
-	overflow: hidden;
 }
 .filter-range-scale {
-	margin-top: 16px;
-	height:4px;
-	background-color: #d1dad3;
+    /* Блочная модель */
+	height: 4px;
+    margin-top: 16px;
+    /* Фон */
+	background: #d1dad3;
 }
 .filter-range-bar {
-	margin-left: 22px;
+    /* Блочная модель */
 	width: 100px;
-	height:4px;
-	background-color: #f8f7f4;
+	height: 4px;
+    margin-left: 22px;
+    /* Фон */
+	background: #f8f7f4;
 }
 .filter-range-controls .toggle {
+    /* Позиционирование */
 	position:absolute;
-	top:7px;
-	width:20px;
-	height:20px;
-	border-radius:50%;
-	background-color: #f8f7f4;
+	top: 7px;
+    /* Блочная модель */
+	width: 20px;
+	height: 20px;
+    /* Фон */
+    background: #f8f7f4;
+    /* Декоративные элементы */
+	border-radius: 50%;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
 	cursor:pointer;
 }
 .filter-range-controls .toggle:hover {
-	width:22px;
-	height:22px;
-	top:5px;
+    /* Позиционирование */
+    top: 5px;
+    /* Блочная модель */
+	width: 22px;
+	height: 22px;
 }
 .filter-range-controls .min-toggle {
+    /* Позиционирование */
 	left: 36px;
 }
 .filter-range-controls .max-toggle {
+    /* Позиционирование */
 	left: 133px;
 }
 .filter-fat-content-radio-list {
+    /* Блочная модель */
     width: 410px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.2);
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* Оформление текста */
     font-size: 0;
+    list-style: none;
+    /* Фон */
+    background: rgba(255, 255, 255, 0.2);
+    /* Декоративные элементы */
+    border-radius: 18px;
 }
 .filter-fat-content-radio-item {
+    /* Позиционирование */
     position: relative;
+    /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
     margin: 0 24px;
+    padding: 8px 0;
+    /* Оформление текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
-    padding: 8px 0;
 }
 .filter-fat-content-radio-list li:first-child {
+    /* Блочная модель */
     margin-left: 44px;
 }
 .filter-fat-content-radio-list li:last-child {
+    /* Блочная модель */
     margin-right: 0;
 }
-.filter-fat-content-radio-item input{
-	display:none;
+.filter-fat-content-radio-item input {
+    /* Управление потоком */
+	display: none;
 }
 .fat-content-radio input+.indicator {
+    /* Позиционирование */
 	position:absolute;
+    left: -30px;
+    /* Блочная модель */
 	width: 18px;
 	height: 18px;
-	left: -30px;
-	border-radius:50%;
+    /* Фон */
+    background: #aabcb2;
+	/* Декоративные элементы */
 	border:4px solid #aabcb2;
+    border-radius:50%;
 	box-shadow: 0 0 0 1px #f8f7f4;
 	box-sizing: border-box;
-	background-color: #aabcb2;
 }
-.fat-content-radio input:checked+.indicator{
-	background-color: #f8f7f4;
+.fat-content-radio input:checked+.indicator {
+    /* Фон */
+	background: #f8f7f4;
 }
 .fat-content-radio input+.indicator:hover {
-	box-shadow: 0 0 0 2px #f8f7f4;
-	border:3px solid #aabcb2;
-	width:16px;
-	height:16px;
+    /* Блочная модель */
+	width: 16px;
+	height: 16px;
+    /* Декоративные элементы */
+    box-shadow: 0 0 0 2px #f8f7f4;
+	border: 3px solid #aabcb2;
 }
 .fat-content-radio input:disabled+.indicator {
     opacity: 0.4;
 }
 .filter-filler {
+    /* Блочная модель */
     margin-right: 14px;
 }
 .filter-filler-checkbox-list {
+    /* Блочная модель */
     width: 703px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.2);
     margin: 0;
     padding: 0;
+    /* Оформление текста */
     list-style: none;
     font-size: 0;
+    /* Фон */
+    background: rgba(255, 255, 255, 0.2);
+    /* Декоративные элементы */
+    border-radius: 18px;
 }
 .filter-filler-checkbox-item {
+    /* Позиционирование */
     position: relative;
+    /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
     margin: 0 27px;
+    padding: 8px 0;
+    /* Оформление текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
-    padding: 8px 0;
 }
 .filter-filler-checkbox-list li:first-child {
+    /* Блочная модель */
     margin-left: 48px;
 }
 .filter-filler-checkbox-list li:last-child {
+    /* Блочная модель */
     margin-right: 0;
 }
 .filter-filler-checkbox-item input{
-	display:none;
+    /* Управление потоком */
+	display: none;
 }
 .filter-filler-checkbox {
-	position:relative;
-	cursor:pointer;
+    /* Позиционирование */
+	position: relative;
+    /* Декоративные элементы */
+	cursor: pointer;
 }
 .filter-filler-checkbox input+.check-indicator {
-	position:absolute;
-	background: url("../img/checkbox-unchecked.png") no-repeat;
+    /* Позиционирование */
+	position :absolute;
+    left: -33px;
+    /* Блочная модель */
 	width:20px;
 	height:20px;
-	left:-33px;
+    /* Фон */
+    background: url("../img/checkbox-unchecked.png") no-repeat;
 }
 .filter-filler-checkbox input:checked+.check-indicator {
+    /* Фон */
 	background: url("../img/checkbox-checked.png");
 }
 .filter-filler-checkbox input:checked+.check-indicator:hover {
+    /* Фон */
 	background: url("../img/checkbox-checked-hover.png");
 }
-.filter-filler-checkbox input+.check-indicator:hover  {
+.filter-filler-checkbox input+.check-indicator:hover {
+    /* Фон */
 	background: url("../img/checkbox-unchecked-hover.png");
 }
 .filter-filler-checkbox input:disabled+.check-indicator {
     opacity: 0.4;
 }
 .filter-button {
+    /* Блочная модель */
     height: 36px;
-	box-sizing: border-box;
+	margin-top: 31px;
+	padding: 7px 27px;
+    /* Оформление текста */
 	font-size: 16px;
 	font-weight: 500;
+    line-height: 18px;
 	color: #ffffff;
-	line-height: 18px;
-	border:2px solid #fbfcfb;
-	padding:7px 27px;
+    /* Фон */
 	background: rgba(255, 255, 255, 0.2);
-	border-radius:100px;
-	margin-top: 31px;
+    /* Декоративные элементы */
+    box-sizing: border-box;
+    border: 2px solid #fbfcfb;
+	border-radius: 100px;
 	cursor:pointer;
 }
 .filter-button:hover {
-	background-color: #fbfcfb;
-	color: #323232;
-	border:none;
-	padding-top: 7px;
+    /* Блочная модель */
+    padding-top: 7px;
 	padding-bottom: 7px;
-    border:2px solid transparent;
+    /* Оформление текста */
+    color: #323232;
+    /* Фон */
+	background: #fbfcfb;
+	/* Декоративные элементы */
+    border: 2px solid transparent;
 }
 .filter-button:active {
-	background-color: #eaeaea;
-	color: #323232;
-	box-shadow: inset 0px 2px 1px #696969;
-	border:none;
-	padding-top: 9px;
+    /* Блочная модель */
+    padding-top: 9px;
 	padding-bottom: 9px;
+    /* Оформление текста */
+	color: #323232;
+    /* Фон */
+	background-color: #eaeaea;
+    /* Декоративные элементы */
+	box-shadow: inset 0px 2px 1px #696969;
+	border: none;
 }
 .pagination-list {
+    /* Управление потоком */
     float: right;
+    /* Блочная модель */
     margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-    margin-bottom: 30px;
     margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 0;
+    /* Оформление текста */
+    font-size: 0;
+    list-style: none;
 }
 .pagination-item {
     /* Управление потоком */
     display: inline-block;
+    /* Блочная модель */
+    width: 26px;
+    height: 26px;
+    vertical-align: top;
+    /* Оформление текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
-    width: 26px;
-    height: 26px;
     text-align: center;
-    vertical-align: top;
 }
 .pagination-item a {
     /* Управление потоком */
